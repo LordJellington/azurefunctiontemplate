@@ -1,5 +1,4 @@
 {
-  "disabled": false,
   "bindings": [
     {
       "authLevel": "function",
@@ -11,6 +10,16 @@
       "type": "http",
       "direction": "out",
       "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "bookmark",
+      "databaseName": "func-io-learn-db",
+      "collectionName": "Bookmarks",
+      "connectionStringSetting": "azure-functions-jellins_DOCUMENTDB",
+      "id": "{id}",
+      "partitionKey": "{id}",
+      "direction": "in"
     }
   ]
 }

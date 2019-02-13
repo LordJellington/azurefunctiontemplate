@@ -3,7 +3,7 @@
   "tasks": [
     {
       "label": "Run Functions Host",
-      //"identifier": "runFunctionsHost", << apparently deprecated
+      "identifier": "runFunctionsHost",
       "type": "shell",
       "command": "func host start",
       "isBackground": true,
